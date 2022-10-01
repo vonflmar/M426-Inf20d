@@ -1,4 +1,4 @@
-Hallo zusammen
+Hallo zusammen  
 Von nun an, werden wir hauptsächtlich über Git unsere Aufgaben austauschen.
 
 ## Arbeitsweise
@@ -40,8 +40,8 @@ persönliches Repository kopiert. (Sie brauchen nichts weiter einzustellen und
 können das folgende Formular bestätigen.)
 
 Stellen Sie nun sicher, dass Sie auf der Seite Ihres persönlichen Repositories
-sind, also z.B. `johndoe/aufgaben-versionskontrolle` statt
-`m426/aufgaben-versionskontrolle`. Dies ist nun ihre persönliche Kopie, und Sie
+sind, also z.B. `peterp/M426-Inf20d` statt
+`vonflmar/M426-Inf20d`. Dies ist nun ihre persönliche Kopie, und Sie
 können grundsätzlich damit machen, was Sie wollen. Niemand ausser der
 Administrator kann Ihre Änderungen sehen.
 
