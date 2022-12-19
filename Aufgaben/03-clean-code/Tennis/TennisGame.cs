@@ -7,7 +7,7 @@ namespace Tennis
         private int p1point;
         private int p2point;
 
-        private string Five_teen = "Fifteen";
+        private string five_teen = "Fifteen";
 
         private string p1res = "";
         private string p2res = "";
@@ -104,14 +104,14 @@ namespace Tennis
 
             if (p2point > p1point && p1point >= 3)
             {
-                s = generate_Player_2_Name();
+                s = GeneratePlayer2Name();
             }
 
             if (p1point >= 4 && p2point >= 0 && (p1point - p2point) >= 2)
             {
                 s = "Win for player1";
             }
-            s = returnWinForPlayerOneIfWon(s, p1point, p2point);
+            s = returnWinForPlayerOne(s, p1point, p2point);
             return s;
         }
 
@@ -142,16 +142,16 @@ namespace Tennis
         //    return "error";
         //}
 
-        private static string generate_Player_2_Name()
+        private static string GeneratePlayer2Name()
         {
             return "Advantage player2";
         }
 
-        public string returnWinForPlayerOneIfWon(string s, int q, int y)
+        public string returnWinForPlayerOne(string s, int q, int y)
         {
             if (y >= 4 && q >= 0 && (y - q) >= 2)
             {
-                return "Win for player2";
+                s = "Win for player1";
             }
             return s; 
         }
@@ -160,19 +160,22 @@ namespace Tennis
         {
             for (int i = 0; i < number; i++)
             {
-                P1Score();
+                PlayerOneScore();
             }
         }
 
-        public void SetP2Score(int number)
+        public void SetPlayer2Score(int number)
         {
-            for (var i = 0; i < number; i++)
+            for (int i = 0; i < number; i++)
             {
                 SecondPlayerScore();
             }
         }
 
-        private void P1Score() => p1point++;
+        private void PlayerOneScore()
+        {
+            p1point++;
+        }
         private void SecondPlayerScore()
         {
             p2point++;
